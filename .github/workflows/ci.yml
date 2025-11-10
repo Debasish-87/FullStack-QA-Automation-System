@@ -1,0 +1,39 @@
+name: CI Pipeline - UI & API Automation Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v3
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Cache Dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Run Tests (UI + API)
+        run: mvn clean test -Dtestng.xml
+
+      - name: Upload Allure Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-results
+          path: allure-results
