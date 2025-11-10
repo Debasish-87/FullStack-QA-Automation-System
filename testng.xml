@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="UI Tests Suite">
+
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="UI Tests">
+        <classes>
+            <class name="tests.ui.LoginTest"/>
+            <class name="tests.ui.CheckoutFlowTests"/>
+        </classes>
+    </test>
+
+</suite>

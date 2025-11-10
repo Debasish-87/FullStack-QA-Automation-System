@@ -1,0 +1,9 @@
+2025-11-10 08:58:13 INFO  - 💡 Starting test with Username: standard_user | Expected: success
+2025-11-10 08:58:13 INFO  -  Verifying successful login...
+2025-11-10 08:58:13 INFO  -  Login successful as expected for user: standard_user
+2025-11-10 08:58:16 INFO  - 💡 Starting test with Username: locked_out_user | Expected: failure
+2025-11-10 08:58:17 INFO  -  Verifying login failure...
+2025-11-10 08:58:17 INFO  -  Login failed as expected for user: locked_out_user
+2025-11-10 08:58:20 INFO  - 💡 Starting test with Username: problem_user | Expected: success
+2025-11-10 08:58:20 INFO  -  Verifying successful login...
+2025-11-10 08:58:20 INFO  -  Login successful as expected for user: problem_user
