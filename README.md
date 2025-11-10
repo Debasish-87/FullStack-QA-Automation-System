@@ -10,7 +10,7 @@ This is a **Production-Grade** Automation Framework designed for **UI + API Test
 
 ---
 
-## ✅ Key Features
+##  Key Features
 
 | Feature | Status | Description |
 |--------|--------|-------------|
@@ -30,28 +30,73 @@ This is a **Production-Grade** Automation Framework designed for **UI + API Test
 
 ```
 
-src
-├── main
-│   ├── java
-│   │   ├── base            # Driver Setup & TestBase
-│   │   ├── pages           # Page Objects (UI Screens)
-│   │   ├── utils           # Wait, Logs, Excel, JSON, Screenshot Utils
-│   │   └── api             # API Request Builders & DTOs
-│   └── resources
-│       ├── config.properties
-│       └── log4j2.xml
-└── test
-├── java
-│   ├── tests/ui        # UI Test Cases
-│   ├── tests/api       # API Test Cases
-│   └── listeners       # Screenshot + Allure Event Listeners
-└── resources/testdata  # JSON + Excel Test Inputs
+qa-automation-framework-selenium-testng-allure
+│
+├── pom.xml                        # Project dependencies & plugins
+├── testng.xml                     # Test Suite Runner
+├── README.md                      # Project Documentation
+│
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   ├── base               # BaseTest & WebDriver Manager
+│   │   │   │   ├── BaseTest.java
+│   │   │   │   └── DriverManager.java
+│   │   │   │
+│   │   │   ├── pages              # Page Object Model Classes
+│   │   │   │   ├── LoginPage.java
+│   │   │   │   ├── InventoryPage.java
+│   │   │   │   ├── CartPage.java
+│   │   │   │   ├── CheckoutInfoPage.java
+│   │   │   │   ├── CheckoutOverviewPage.java
+│   │   │   │   └── OrderSuccessPage.java
+│   │   │   │
+│   │   │   ├── utils              # Common Utilities
+│   │   │   │   ├── WaitUtils.java
+│   │   │   │   ├── LoggerUtil.java
+│   │   │   │   ├── ScreenshotUtils.java
+│   │   │   │   ├── ExcelUtils.java
+│   │   │   │   └── JsonUtils.java
+│   │   │   │
+│   │   │   └── api                # API Client + Service Layer
+│   │   │       ├── ApiClient.java
+│   │   │       └── ReqResService.java
+│   │   │
+│   │   └── resources              # Configurations
+│   │       ├── config.properties
+│   │       ├── environment.properties
+│   │       └── log4j2.xml
+│   │
+│   └── test
+│       ├── java
+│       │   ├── tests
+│       │   │   ├── ui              # UI Test Cases
+│       │   │   │   ├── LoginTest.java
+│       │   │   │   └── CheckoutFlowTests.java
+│       │   │   │
+│       │   │   └── api             # API Test Cases
+│       │   │       ├── ReqResApiTests.java
+│       │   │       └── ReqResTests.java
+│       │   │
+│       │   └── listeners           # Screenshot + Logging Listener
+│       │       └── TestListener.java
+│       │
+│       └── resources/testdata      # Test Data (Excel + JSON)
+│           ├── logindata.xlsx
+│           └── createUser.json
+│
+├── allure-results                  # Allure raw execution logs
+├── logs                            # Execution logs
+└── .github/workflows               # CI/CD pipelines
+    ├── ci.yml
+    └── allure-deploy.yml
+
 
 ````
 
 ---
 
-## 🧪 Test Execution
+##  Test Execution
 
 ### Run All Tests:
 ```bash
@@ -72,7 +117,7 @@ mvn allure:serve
 
 ---
 
-## 📊 Allure Report Includes
+##  Allure Report Includes
 
 ✔ Step-Level Execution Logs
 ✔ Screenshots on Failure
@@ -82,7 +127,7 @@ mvn allure:serve
 
 ---
 
-## 🎯 UI Test Scenarios (SauceDemo)
+##  UI Test Scenarios (SauceDemo)
 
 | Scenario               | Status |
 | ---------------------- | ------ |
@@ -93,7 +138,7 @@ mvn allure:serve
 
 ---
 
-## 🌐 API Test Scenarios (ReqRes API)
+##  API Test Scenarios (ReqRes API)
 
 | Endpoint          | Method | Purpose     | Status |
 | ----------------- | ------ | ----------- | ------ |
@@ -102,7 +147,7 @@ mvn allure:serve
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 | Layer         | Tool               |
 | ------------- | ------------------ |
@@ -116,7 +161,7 @@ mvn allure:serve
 
 ---
 
-## 🤖 CI/CD - GitHub Actions Workflow
+##  CI/CD - GitHub Actions Workflow
 
 This project automatically:
 
@@ -132,7 +177,7 @@ Workflow File:
 
 ---
 
-## 🧠 How to Explain This in an Interview
+##  How to Explain This in an Interview
 
 > “This framework demonstrates end-to-end automation capability including UI + API testing, POM-based architecture, data-driven execution, advanced reporting using Allure, and CI/CD pipeline integration. The report is auto-published to GitHub Pages for real-time visibility.”
 
