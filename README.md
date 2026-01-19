@@ -1,11 +1,11 @@
-# Full-Stack QA Automation Framework  
+# Full-Stack QA Automation Framework ( QE 1.0 )
 
 ## *( Selenium + TestNG + POM + Allure Reporting + API + Database + CI/CD with GitHub Pages Dashboard )*
 
 
-This is a **Production-Grade** Automation Framework designed for **UI + API Testing + Database Testing** with a clean, modular structure using **Page Object Model (POM)**, **Data-Driven Testing**, **Allure Reporting**, and **Continuous Integration** via **GitHub Actions**.
+This is a **Production-Grade** Automation Framework  ( QE 1.0 ) designed for **UI + API Testing + Database Testing** with a clean, modular structure using **Page Object Model (POM)**, **Data-Driven Testing**, **Allure Reporting**, and **Continuous Integration** via **GitHub Actions**.
 
-### 🔥 Live Allure Report Dashboard  
+### 🔥 Live Allure Report Dashboard   ( QE 1.0 )
 🔗 **[https://debasish-87.github.io/FullStack-QA-Automation-Framework/](https://debasish-87.github.io/FullStack-QA-Automation-Framework/)**
 
 [![Allure_Report](https://img.shields.io/badge/Allure-Report-blue?style=for-the-badge)](https://debasish-87.github.io/FullStack-QA-Automation-Framework/)
@@ -14,7 +14,7 @@ This is a **Production-Grade** Automation Framework designed for **UI + API Test
 ---
 
 
-## ✅ Key Features
+## ✅ Key Features ( QE 1.0 )
 
 | Feature | Description |
 |--------|-------------|
@@ -29,7 +29,7 @@ This is a **Production-Grade** Automation Framework designed for **UI + API Test
 
 ---
 
-## 🏗️ Architecture & Tech Stack
+## 🏗️ Architecture & Tech Stack  ( QE 1.0 )
 
 | Layer | Tools |
 |------|-------|
@@ -44,7 +44,7 @@ This is a **Production-Grade** Automation Framework designed for **UI + API Test
 
 ---
 
-## 📂 Folder Structure
+## 📂 Folder Structure  ( QE 1.0 )
 
 ```text
 
@@ -115,7 +115,7 @@ FullStack-QA-Automation-Framework
 
 ---
 
-##  Test Execution
+##  Test Execution  ( QE 1.0 )
 
 ### Run All Tests:
 ```bash
@@ -136,7 +136,7 @@ mvn allure:serve
 
 ---
 
-##  Allure Report Includes
+##  Allure Report Includes  ( QE 1.0 )
 
 ✔ Step-Level Execution Logs
 ✔ Screenshots on Failure
