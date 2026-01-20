@@ -1,9 +1,9 @@
-# Full-Stack QA Automation Framework ( QE 1.0 )
+# Full-Stack QA Automation System ( QE 1.0 )
 
 ## *( Selenium + TestNG + POM + Allure Reporting + API + Database + CI/CD with GitHub Pages Dashboard )*
 
 
-This is a **Production-Grade** Automation Framework  ( QE 1.0 ) designed for **UI + API Testing + Database Testing** with a clean, modular structure using **Page Object Model (POM)**, **Data-Driven Testing**, **Allure Reporting**, and **Continuous Integration** via **GitHub Actions**.
+This is a **Production-Grade** Automation System  ( QE 1.0 ) designed for **UI + API Testing + Database Testing** with a clean, modular structure using **Page Object Model (POM)**, **Data-Driven Testing**, **Allure Reporting**, and **Continuous Integration** via **GitHub Actions**.
 
 ### 🔥 Live Allure Report Dashboard   ( QE 1.0 )
 🔗 **[https://debasish-87.github.io/FullStack-QA-Automation-Framework/](https://debasish-87.github.io/FullStack-QA-Automation-Framework/)**
@@ -13,7 +13,7 @@ This is a **Production-Grade** Automation Framework  ( QE 1.0 ) designed for **U
 
 ---
 
-## 🎥 QE 1.0 – Full-Stack Automation Framework Demo
+## 🎥 QE 1.0 – Full-Stack Automation System Demo
 
 ▶️ **Click below to watch the demo video**
 
@@ -56,7 +56,7 @@ https://github.com/user-attachments/assets/4e598767-28ab-4291-972b-4a8f1a818b53
 
 ```text
 
-FullStack-QA-Automation-Framework
+FullStack-QA-Automation-System
 │
 ├── pom.xml                         # Dependencies & Plugins
 ├── testng.xml                      # Test Suite Runner
